@@ -1,0 +1,57 @@
+.codrops-header {
+	width: 99%;
+	height: 99%;
+	position: absolute;
+	top: 10;
+	text-align: center;
+	z-index: 0;
+	font-size: 1.5em;
+}
+
+.codrops-header h1 {
+	position: absolute;
+	font-weight: 700;
+	font-size: 4.5em;
+	line-height: 1.2;
+	color: #fff;
+	z-index: 0;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.codrops-header h1 span {
+	display: block;
+	font-size: 35%;
+}
+
+.codrops-header h1 a {
+	color: #eff62b;
+}
+
+.codrops-header h1 a:hover,
+.codrops-header h1 a:focus {
+	color: #fff;
+}
+
+.codrops-header h1 span::before,
+.codrops-header h1 span::after {
+	content: ' â€• ';
+	font-weight: 200;
+}
+
+.codrops-header h1 i {
+	display: block;
+	font-size: 15%;
+	max-width: 40%;
+	margin: 0 auto;
+	line-height: 2;
+	font-style: normal;
+	font-weight: 400;
+}

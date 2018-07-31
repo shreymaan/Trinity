@@ -1,0 +1,359 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body{min-width:700px; /* suppose you want minimun width of 700px */
+   width: auto !important;  /* Firefox will set width as auto */
+   width:700px;  
+   min-height: 650px; //overflow: hidden;   }
+
+.body1{min-width:700px; /* suppose you want minimun width of 700px */
+   width: auto !important;  /* Firefox will set width as auto */
+   width:700px;  
+   min-height: 650px;
+   overflow-y: scroll; }
+
+
+.content {
+	padding: 0 1em;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+/* Header */
+.codrops-header {
+	width: 99%;
+	height: 99%;
+	position: absolute;
+	top: 10;
+	text-align: center;
+	z-index: 0;
+	font-size: 1.5em;
+}
+.codrops-header img{    position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 147px;
+            left: 46.2%;
+            top: 20%;}
+.codrops-header h1 {
+	position: absolute;
+	font-weight: 700;
+	font-size: 4.5em;
+	line-height: 1.2;
+	color: #fff;
+	z-index: 0;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.codrops-header h1 span {
+	display: block;
+	font-size: 35%;
+}
+
+.codrops-header h1 a {
+	color: #eff62b;
+}
+
+.codrops-header h1 a:hover,
+.codrops-header h1 a:focus {
+	color: #fff;
+}
+
+.codrops-header h1 span::before,
+.codrops-header h1 span::after {
+	content: ' ― ';
+	font-weight: 200;
+}
+
+.codrops-header h1 i {
+	display: block;
+	font-size: 15%;
+	max-width: 40%;
+	margin: 0 auto;
+	line-height: 2;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	font-weight: 500;
+	font-size: 0.69em;
+	line-height: 2.2;
+	padding: 1em 0;
+	position: absolute;
+	z-index: 100;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.codrops-top a {
+	color: #fff;
+	display: inline-block;
+	padding: 1em 2em;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Codrops demo links */
+.codrops-demos {
+	padding: 3em 0;
+}
+
+.codrops-demos a {
+	font-weight: 700;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+	margin: 0 1.5em;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+.codrops-demos a.current-demo {
+	color: #333;
+	border-color: #333;
+}
+
+ul.ref {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.ref li {
+	padding: 1em 0;
+}
+
+/* Related demos */
+.related {
+	text-align: center;
+	font-weight: 500;
+	padding: 5em 0 4em;
+}
+
+.related > a {
+	width: calc(100% - 20px);
+	max-width: 340px;
+	border: 1px solid black;
+	border-color: initial;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 0.925em;
+	padding: 1em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+/*Media Rules*/
+
+@media (max-width: 275px) {
+	.codrops-header h1 {
+		font-size: 0em ;	
+	}
+	.codrops-header h1 i {
+		font-size: 0px ;	
+		
+	}
+
+	.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 100px;
+            width: 100px;
+              top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+        }    
+}
+@media (min-width: 276px ) and (max-width: 499px) {
+	.codrops-header h1 {
+		font-size: 2.1em ;	
+	}
+	.codrops-header h1 i {
+		max-width: 70%;	
+		font-size: 10px ;	
+
+	}
+
+	.codrops-header img
+	{    
+			position:absolute;
+        left:0;
+    	right:0;
+    	height: 80px;
+    	width: 80px;
+    	margin:auto;	
+    	z-index: 0;
+        }
+}
+@media (min-width: 500px ) and (max-width: 855px) {
+	.codrops-header h1 {
+		font-size: 3.0em ;	
+	}
+	.codrops-header h1 i {
+		
+		max-width: 70%;	
+
+	}
+
+	.codrops-header img
+	{    
+		 position:absolute;
+        left:0;
+    	right:0;height: 100px;
+    	width: 100px;
+    	margin:auto;	
+    	z-index: 0;}
+}
+@media (min-width: 856px ) and (max-width: 1000px) {
+	.codrops-header h1 {
+		font-size: 3.4em ;	
+	}
+	.codrops-header h1 i {
+		
+		max-width: 70%;	
+
+	}
+
+	.codrops-header img
+	{    
+			position:absolute;
+        left:0;
+    	right:0;
+    height: 100px;
+    	width: 100px;	margin:auto;	
+    	z-index: 0;
+        }
+}
+@media (min-width: 1001px ) and (max-width: 1366px) {
+	.codrops-header h1 {
+		font-size: 3.5em ;	
+	}
+	.codrops-header h1 i {
+		
+		max-width: 60%;	
+
+	}
+
+	.codrops-header img
+	{   /*margin-bottom: 14px;
+		*/position:absolute;
+        left:0;
+    	right:0;
+    	height: 100px;
+    	width: 100px;
+    	margin:auto;	
+    	z-index: 0;
+        }
+}
+@media (min-width: 1367px ) and (max-width: 1700px) {
+	.codrops-header h1 {
+		font-size: 4.1em ;	
+	}
+	.codrops-header h1 i {
+		font-size: 15px ;
+		max-width: 48%;	
+
+	}
+
+	.codrops-header img
+	{   margin-bottom: 14px;
+		position:absolute;
+        left:0;
+    	right:0;
+    	height: 142px;
+    	width: 142px;
+    	margin:auto;	
+    	z-index: 0;
+        }
+}
+@media (min-height: 0px ) and (max-height: 645px) {
+	.codrops-header h1 {
+		font-size: 0em ;	
+	}
+	.codrops-header h1 i {
+		font-size: 0px ;	
+		
+	}
+
+	.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 200px;
+            width: 200px;
+                 }    
+}

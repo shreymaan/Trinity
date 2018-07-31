@@ -1,0 +1,394 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body{/*font-family: 'Montserrat', sans-serif;*/
+  font-weight: normal;
+  color: white;   }
+
+
+
+
+.content {
+	padding: 0 1em;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+/* Header */
+.codrops-header {
+	width: 99%;
+	height: 99%;
+	position: absolute;
+	top: 10;
+	text-align: center;
+	z-index: 0;
+	font-size: 1.5em;
+}
+.codrops-header img{    position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 147px;
+            left: 46.2%;
+            top: 20%;}
+.codrops-header h1 {
+	position: absolute;
+	font-weight: 700;
+	font-size: 4.5em;
+	line-height: 1.2;
+	color: #fff;
+	z-index: 0;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.codrops-header h1 span {
+	display: block;
+	font-size: 35%;
+}
+
+.codrops-header h1 a {
+	color: #eff62b;
+}
+
+.codrops-header h1 a:hover,
+.codrops-header h1 a:focus {
+	color: #fff;
+}
+
+.codrops-header h1 span::before,
+.codrops-header h1 span::after {
+	content: ' ― ';
+	font-weight: 200;
+}
+
+.codrops-header h1 i {
+	display: block;
+	font-size: 15%;
+	max-width: 40%;
+	margin: 0 auto;
+	line-height: 2;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	font-weight: 500;
+	font-size: 0.69em;
+	line-height: 2.2;
+	padding: 1em 0;
+	position: absolute;
+	z-index: 100;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.codrops-top a {
+	color: #fff;
+	display: inline-block;
+	padding: 1em 2em;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Codrops demo links */
+.codrops-demos {
+	padding: 3em 0;
+}
+
+.codrops-demos a {
+	font-weight: 700;
+	font-size: 0.85em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0.5em 0;
+	margin: 0 1.5em;
+	display: inline-block;
+	border-bottom: 2px solid transparent;
+}
+
+.codrops-demos a.current-demo {
+	color: #333;
+	border-color: #333;
+}
+
+ul.ref {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.ref li {
+	padding: 1em 0;
+}
+
+/* Related demos */
+.related {
+	text-align: center;
+	font-weight: 500;
+	padding: 5em 0 4em;
+}
+
+.related > a {
+	width: calc(100% - 20px);
+	max-width: 340px;
+	border: 1px solid black;
+	border-color: initial;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 0.925em;
+	padding: 1em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+
+@media screen and (max-width: 70em) {
+	.codrops-header h1 {
+		font-size: 3.5em;
+	}
+	.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 100px;
+            width: 100px;
+            left: 50%;
+            top: 20%;
+        }
+}
+
+@media screen and (max-width: 80em) {
+	.codrops-header h1 {
+		font-size: 3em;
+	}
+	.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 120px;
+            width: 120px;
+            left: 45%;
+            top: 25%;
+        }
+}
+
+
+@media screen and (max-width: 30em) {
+	.wrap {
+		height: 100vh !important;
+		background: #3d4955;
+	}
+	.codrops-header {
+		top: 100%;
+	}
+	.codrops-header h1 {
+		padding-top: 5em;
+	}
+	.codrops-header h1 i {
+		font-size: 42%;
+		max-width: 90%;
+	}
+	.codrops-icon {
+		font-size: 1.5em;
+	}
+	.codrops-icon span {
+		display: none;
+	}
+}
+
+
+#optin {
+	background: #232323 url(images/gloss.png) no-repeat bottom center;
+	border-bottom: 3px solid #232323;
+	color: #fff;
+	padding: 20px 15px;
+	text-shadow: 1px 1px #111;
+	bottom: 0px;
+	right: 0%;
+	position: absolute;
+	filter: alpha(opacity=50); 
+}
+	#optin input {
+		border: 1px solid #111;
+		font-size: 15px;
+		margin-bottom: 10px;
+		padding: 8px 10px;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		box-shadow: 0 2px 2px #111;
+		-moz-box-shadow: 0 2px 2px #111;
+		-webkit-box-shadow: 0 2px 2px #111
+	}
+		#optin input.email { background: #fff url(images/email.png) no-repeat 10px center; padding-left: 35px }
+		#optin input.name { background: #fff url(images/name.png) no-repeat 10px center; padding-left: 35px }
+		#optin input[type="submit"] {
+			background: #960e17 url(images/red.png) repeat-x top;
+			border: 1px solid #111;
+			color: #fff;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 8px 0;
+			text-shadow: -1px -1px #3a060a;
+			width: 100%
+		}
+			#optin input[type="submit"]:hover { color: #ffa5a5 }
+
+			@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+   {
+.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 142px;
+            left: 43.5%;
+            top: 35%;
+        }
+   }
+
+   			@media screen 
+  and (device-width: 412px) 
+  and (device-height: 732px) 
+   {
+.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 142px;
+            left: 43.5%;
+            top: 32%;
+        }
+   }
+
+      			@media screen 
+  and (device-width: 320px) 
+  and (device-height: 568px) 
+   {
+.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 142px;
+            left: 43.5%;
+            top: 32%;
+        }
+   }
+
+   @media screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+   {
+.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 142px;
+            left: 43.5%;
+            top: 32%;
+        }
+   }
+   @media screen 
+  and (device-width: 414px) 
+  and (device-height: 736px) 
+   {
+.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 142px;
+            left: 43.5%;
+            top: 32%;
+        }
+   }
+   @media screen 
+  and (device-width: 768px) 
+  and (device-height: 1024px) 
+   {
+.codrops-header img
+	{    
+			position: absolute;
+            z-index: 0;
+            height: 142px;
+            width: 142px;
+            left: 43.5%;
+            top: 30%;
+        }
+   }
